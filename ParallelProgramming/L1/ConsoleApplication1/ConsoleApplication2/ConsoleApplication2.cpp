@@ -246,7 +246,7 @@ int main(int argc, char* argv[])
     
     vector<BusinessManager> managers;
 
-    ifstream f ("IFF06_BurbaArnas_L1_dat_1.txt");
+    ifstream f ("dat_1.txt");
     
     BusinessManager temp;
 

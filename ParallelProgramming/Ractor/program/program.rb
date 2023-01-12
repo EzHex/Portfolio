@@ -107,7 +107,7 @@ puts 'Workers ready'
 
 managers = []
 # Duomenų nuskaitymas iš failo
-File.foreach('IFF06_BurbaArnas_L1_dat_1.txt') do |line|
+File.foreach('dat_1.txt') do |line|
   values = line.split ' '
   manager = BusinessManager.new(values[0], values[1].to_i, values[2].to_f)
   managers.push(manager)

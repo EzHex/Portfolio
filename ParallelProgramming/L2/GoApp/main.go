@@ -172,7 +172,7 @@ func main() {
 	var businessManagers []BusinessManager
 	var resultBusinessManagers []BusinessManager
 
-	lines, err := readLines("input_files/IFF06_BurbaArnas_L1_dat_2.txt")
+	lines, err := readLines("input_files/dat_2.txt")
 	check(err)
 
 	for _, line := range lines {

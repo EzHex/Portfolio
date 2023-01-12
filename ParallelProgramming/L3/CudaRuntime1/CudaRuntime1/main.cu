@@ -87,9 +87,9 @@ __global__ void Task(Result* rez, BusinessManager* managers)
 
 int main() {
 
-    //ifstream fd("IFF06ArnasBurba_L3_dat_1.txt"); // dalis
-    //ifstream fd("IFF06ArnasBurba_L3_dat_2.txt"); // mazai
-	ifstream fd("IFF06ArnasBurba_L3_dat_3.txt"); // viskas
+    //ifstream fd("dat_1.txt"); // dalis
+    //ifstream fd("dat_2.txt"); // mazai
+	ifstream fd("dat_3.txt"); // viskas
     ofstream fr("res.txt");
 
     BusinessManager businessManagers[300];

@@ -156,11 +156,6 @@
   <ItemGroup>
     <ClCompile Include="ConsoleApplication2.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <Content Include="IFF06_BurbaArnas_L1_dat_1.txt" />
-    <Content Include="IFF06_BurbaArnas_L1_dat_2.txt" />
-    <Content Include="IFF06_BurbaArnas_L1_dat_3.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
