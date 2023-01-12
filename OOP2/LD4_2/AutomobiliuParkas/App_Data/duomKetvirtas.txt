@@ -1,0 +1,9 @@
+Marijampole
+R.Jukneviciaus g.
+pastas4@lietuvospastas.lt
+a;KBK609;Volkswagen;Golf 4;2004-06;2019-05-02;Dyzelinas;4.3;500430
+a;GLE302;Opel;Zaphira;2000-07;2019-04-01;Dyzelinas;5.5;705900
+a;5UPR4;Toyota;Celica V;1998-03;2021-03-28;Benzinas;18.5;120000
+a;HSA771;Lexus;GS;2014-01;2020-05-01;Dyzelinas;9.1;189000
+a;JLA650;Audi;A3;2009-02;2019-04-29;Dyzelinas;7.4;210000
+a;HBS940;BMW;E39 525D;1998-05;2020-09-01;Dyzelinas;6.5;375080

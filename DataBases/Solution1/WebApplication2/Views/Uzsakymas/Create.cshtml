@@ -1,0 +1,178 @@
+﻿@model WebApplication2.Models.Uzsakymas
+@{
+	ViewData["title"] = "Užsakymo kūrimas";
+}
+
+<div class="main-content-header container-fluid d-flex d-row justify-content-between align-items-center">
+	<span class="title">@ViewData["title"]</span>
+	<span class="actions">
+		<a href="@Url.Action("Index")" class="link-primary"><i class="fa-solid fa-angles-left"></i> Atgal į sarašą</a>
+	</span>
+</div>
+
+
+<div class="container-fluid d-flex justify-content-center">
+@using(Html.BeginForm())
+{
+	@Html.AntiForgeryToken()
+
+	@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+	@Html.HiddenFor(m => m.Number)
+
+	<fieldset class="border rounded shadow p-2">
+		<legend class="text-center">Užsakymas</legend>
+
+		<div class="form-group">
+			@Html.LabelFor(m => m.Date, new { @class = "control-label" })
+			@Html.EditorFor(m => m.Date, "{0:yyyy-MM-dd}", new { @class = "form-control datetime-picker"})
+			@Html.ValidationMessageFor(m => m.Date, "", new { @class = "text-danger" })
+		</div>
+
+		<div class="form-group">
+			@Html.LabelFor(m => m.Status, new { @class = "control-label" })
+			@Html.DropDownListFor(m => m.Status, Model.Lists.Statuses, "---", new { @class = "form-control"})
+			@Html.ValidationMessageFor(m => m.Status, "", new { @class = "text-danger" })
+		</div>
+
+		<div class="form-group">
+			@Html.LabelFor(m => m.WorkerId, new { @class = "control-label" })
+			@Html.DropDownListFor(m => m.WorkerId, Model.Lists.Workers, "---", new { @class = "form-control"})
+			@Html.ValidationMessageFor(m => m.WorkerId, "", new { @class = "text-danger" })
+		</div>
+
+	</fieldset>
+
+	<fieldset class="border rounded shadow p-2">
+		<legend class="text-center">Pirkėjas</legend>
+
+		@Html.HiddenFor(m => m.Buyer.Code)
+
+		<div class="form-group">
+			@Html.LabelFor(m => m.Buyer.Name, new { @class = "control-label" })
+			@Html.EditorFor(m => m.Buyer.Name, new { @class = "form-control"})
+			@Html.ValidationMessageFor(m => m.Buyer.Name, "", new { @class = "text-danger" })
+		</div>
+
+		<div class="form-group">
+			@Html.LabelFor(m => m.Buyer.Surname, new { @class = "control-label" })
+			@Html.EditorFor(m => m.Buyer.Surname, new { @class = "form-control"})
+			@Html.ValidationMessageFor(m => m.Buyer.Surname, "", new { @class = "text-danger" })
+		</div>
+
+		<div class="form-group">
+			@Html.LabelFor(m => m.Buyer.Address, new { @class = "control-label" })
+			@Html.EditorFor(m => m.Buyer.Address, new { @class = "form-control"})
+			@Html.ValidationMessageFor(m => m.Buyer.Address, "", new { @class = "text-danger" })
+		</div>
+
+		<div class="form-group">
+			@Html.LabelFor(m => m.Buyer.Phone, new { @class = "control-label" })
+			@Html.EditorFor(m => m.Buyer.Phone, new { @class = "form-control"})
+			@Html.ValidationMessageFor(m => m.Buyer.Phone, "", new { @class = "text-danger" })
+		</div>
+
+		<div class="form-group">
+			@Html.LabelFor(m => m.Buyer.MethodOfPayment, new { @class = "control-label" })
+			@Html.DropDownListFor(m => m.Buyer.MethodOfPayment, Model.Buyer.Lists.Payments, "---", new { @class = "form-control"})
+			@Html.ValidationMessageFor(m => m.Buyer.MethodOfPayment, "", new { @class = "text-danger" })
+		</div>
+
+		<div class="form-group">
+			@Html.LabelFor(m => m.Buyer.DeliveryMethod, new { @class = "control-label" })
+			@Html.DropDownListFor(m => m.Buyer.DeliveryMethod, Model.Buyer.Lists.DeliveryMethods, "---", new { @class = "form-control"})
+			@Html.ValidationMessageFor(m => m.Buyer.DeliveryMethod, "", new { @class = "text-danger" })
+		</div>
+
+	</fieldset>
+
+	<fieldset class="border rounded shadow p-2">
+		<div class="container-fluid d-flex d-row justify-content-between align-items-center">
+			<span></span>
+			<legend style="width: unset; margin-bottom: 0px;">Prekių pasirinkimas</legend>
+			<button
+				name="add"
+				value="1"
+				formnovalidate @*ASP.NET Core magic attribute to prevent client side validation when submit button is clicked*@
+				formaction="@Url.Action()#listEnd"
+				class="btn btn-info"
+				style="white-space: nowrap;"><i class="fa-solid fa-plus"></i> Pridėti </button>
+		</div>
+
+		<table class="table table-striped table-hover w-100">
+			<thead>
+				<tr>
+					<th>Prekė</th>
+					<th>Kiekis</th>
+					<th style="width: 1px;"></th>
+				</tr>
+			</thead>
+			<tbody>
+				@for( var i = 0; i < Model.Items.Count; i++ ) {
+				<tr>
+					@* add hidden form fields for non-visible properties, otherwise they will get lost in code that handles button presses *@
+					@Html.HiddenFor(m => m.Items[i].Id)
+					
+					<td>
+						@Html.LabelFor(m => m.Items[i].ItemId, new { @class = "control-label" })
+						@Html.DropDownListFor(m => m.Items[i].ItemId, Model.Lists.Items, "---", new { @class = "form-control"})
+						@Html.ValidationMessageFor(m => m.Items[i].ItemId, "", new { @class = "text-danger" })
+					</td>
+						
+					<td>
+						@Html.LabelFor(m => m.Items[i].Count, new { @class = "control-label" })
+						@Html.EditorFor(m => m.Items[i].Count, new { @class = "form-control"})
+						@Html.ValidationMessageFor(m => m.Items[i].Count, "", new { @class = "text-danger" })
+					</td>
+
+					<td>
+						<button
+							name="remove"
+							value="@Model.Items[i].Id"
+							formnovalidate @*ASP.NET Core magic attribute to prevent client side validation when submit button is clicked*@
+							formaction="@Url.Action()#listEnd"
+							class="btn btn-danger"
+							style="white-space: nowrap;"
+						><i class="fa-solid fa-trash"></i> Šalinti </button>
+					</td>
+				</tr>
+				}
+			</tbody>
+		</table>
+
+	</fieldset>
+
+	<fieldset class="border rounded shadow p-2">
+		<legend class="text-center">Sąskaita</legend>
+
+		@Html.HiddenFor(m => m.Check.Id)
+
+		<div class="form-group">
+			@Html.LabelFor(m => m.Check.Date, new { @class = "control-label" })
+			@Html.EditorFor(m => m.Check.Date, "{0:yyyy-MM-dd}", new { @class = "form-control datetime-picker"})
+			@Html.ValidationMessageFor(m => m.Check.Date, "", new { @class = "text-danger" })
+		</div>
+
+		<div class="form-group">
+			@Html.LabelFor(m => m.Check.Sum, new { @class = "control-label" })
+			@Html.EditorFor(m => m.Check.Sum, new { @class = "form-control", @readonly = "readonly"})
+			@Html.ValidationMessageFor(m => m.Check.Sum, "", new { @class = "text-danger" })
+		</div>
+
+	</fieldset>
+
+
+
+	<div class="container-fluid d-flex d-row justify-content-end">
+		<button name="save" value="1" class="btn btn-success"><i class="fa-solid fa-floppy-disk"></i> Išsaugoti</button>
+	</div>
+}
+</div>
+
+
+<div class="main-content-footer container-fluid d-flex d-row justify-content-between align-items-center">
+	<span class="title"></span>
+	<span class="actions">
+		<a href="@Url.Action("Index")" class="link-primary"><i class="fa-solid fa-angles-left"></i> Atgal į sarašą</a>
+	</span>
+</div>

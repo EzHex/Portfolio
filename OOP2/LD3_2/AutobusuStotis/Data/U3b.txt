@@ -1,0 +1,14 @@
+﻿Šiauliai 5
+Druskininkai 6
+Kėdainiai 4
+Panevėžys 12
+Biržai 15
+Klaipėda 20
+Marijampolė 5
+Palanga 19
+Šventoji 21
+Vilnius 7
+Mažeikiai 18
+Alytus 6
+Vilkaviškis 7
+Telšiai 15

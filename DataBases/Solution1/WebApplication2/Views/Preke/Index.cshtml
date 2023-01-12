@@ -1,0 +1,73 @@
+﻿@model IEnumerable<WebApplication2.Models.Preke>
+@{
+	ViewData["title"] = "Specifikacijos";
+}
+
+
+<div class="main-content-header container-fluid d-flex d-row justify-content-between align-items-center p-2">
+	<span class="title">@ViewData["title"]</span>
+	<span class="actions">
+		<a href="@Url.Action("Create")" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Sukurti naują</a>
+	</span>
+</div>
+
+<div class="d-flex justify-content-center">
+	<table class="entitylist table table-striped table-hover">
+		<thead>
+			<tr>
+				<th>
+					@Html.DisplayNameFor(model => model.Code)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.Title)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.Price)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.Count)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.Manufacturer)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.Distributor)
+				</th>
+				<th>
+					@Html.DisplayNameFor(model => model.Type)
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (var item in Model) {
+			<tr>
+				<td>
+					@Html.DisplayFor(model => item.Code)
+				</td>
+				<td>
+					@Html.DisplayFor(model => item.Title)
+				</td>
+				<td>
+					@Html.DisplayFor(model => item.Price)
+				</td>
+				<td>
+					@Html.DisplayFor(model => item.Count)
+				</td>
+				<td>
+					@Html.DisplayFor(model => item.Manufacturer)
+				</td>
+				<td>
+					@Html.DisplayFor(model => item.Distributor)
+				</td>
+				<td>
+					@Html.DisplayFor(model => item.Type)
+				</td>
+				<td>
+					<a href="@Url.Action("Edit", new { id = item.Code })" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i> Redaguoti</a>
+					<a href="@Url.Action("Delete", new { id = item.Code })" class="btn btn-danger"><i class="fa-solid fa-trash"></i> Šalinti</a>
+				</td>
+			</tr>
+			}
+		</tbody>
+	</table>
+</div>

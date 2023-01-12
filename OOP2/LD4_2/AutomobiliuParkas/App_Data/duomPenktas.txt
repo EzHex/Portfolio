@@ -1,0 +1,9 @@
+Vilnius
+Naujamiestis
+pastas5@gmail.com
+a;III777III;BMW;420i M sport;2019-06;2021-01-01;Benzinas;18;30000
+a;MAN666;Honda;NSX;1993-10;2020-02-27;Benzinas;15.5;200000
+k;KBK265;scania;Euro 6;2020-12;2020-03-09;Dyzelinas HVO;25.5;400
+a;GN7;Mercedes Benz;AMG CLA 220d;2020-01;2021-02-01;Dyzelinas;16.6;30000
+a;GMO204;Wolkswagen;Multivan;2009-02;2019-06-08;Dyzelinas;7.4;320500
+m;ERK496;Ford;Transit;2013-06;2019-04-28;Dyzelinas;10.8;12

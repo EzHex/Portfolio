@@ -1,0 +1,31 @@
+--------------------------------------------------------------------------------------------------------------------
+Pradiniai autobusų duomenys
+--------------------------------------------------------------------------------------------------------------------
+| Išvykimo miestas     | Išvykimo laikas      | Atvykimo miestas     | Atvykimo laikas      | Diena                |
+| Kaunas               |                08:00 | Vilnius              |                10:00 | Pirmadienis          |
+| Klaipėda             |                06:00 | Vilnius              |                10:20 | Pirmadienis          |
+| Kaunas               |                08:10 | Šiauliai             |                09:00 | Trečiadienis         |
+| Panevėžys            |                07:35 | Šiauliai             |                09:00 | Antradienis          |
+| Kaunas               |                10:00 | Vilnius              |                12:00 | Pirmadienis          |
+| Panevėžys            |                07:50 | Vilnius              |                10:30 | Pirmadienis          |
+| Kaunas               |                15:00 | Vilnius              |                17:00 | Pirmadienis          |
+| Šiauliai             |                12:35 | Vilnius              |                17:55 | Pirmadienis          |
+--------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------
+Pradiniai kainų duomenys
+-----------------------------------------------
+| Atvykimo miestas     | Kaina                |
+| Kaunas               |                   10 |
+| Vilnius              |                   20 |
+| Panevėžys            |                   15 |
+| Šiauliai             |                    8 |
+| Klaipėda             |                   25 |
+-----------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------
+Populiariausias maršrutas su kainomis
+-------------------------------------------------------------------------------------------------------------------------------------------
+| Išvykimo miestas     | Išvykimo laikas      | Atvykimo miestas     | Atvykimo laikas      | Diena                | Kaina                |
+| Kaunas               |                08:00 | Vilnius              |                10:00 | Pirmadienis          |                 18.0 |
+| Kaunas               |                10:00 | Vilnius              |                12:00 | Pirmadienis          |                 18.0 |
+| Kaunas               |                15:00 | Vilnius              |                17:00 | Pirmadienis          |                 18.0 |
+-------------------------------------------------------------------------------------------------------------------------------------------

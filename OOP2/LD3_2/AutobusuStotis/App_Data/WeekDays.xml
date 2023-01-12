@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<savaitesDienos>
+  <diena pavadinimas="Pirmadienis"/>
+  <diena pavadinimas="Antradienis"/>
+  <diena pavadinimas="Trečiadienis"/>
+  <diena pavadinimas="Ketvirtadienis"/>
+  <diena pavadinimas="Penktadienis"/>
+  <diena pavadinimas="Šeštadienis"/>
+  <diena pavadinimas="Sekmadienis"/>
+</savaitesDienos>

@@ -1,0 +1,11 @@
+2021-05-12;180.192.1.42
+09:55:24;145.56.74.42;www.tamo.lt/Prisijungimas/Login
+10:17:25;145.56.74.42;www.tamo.lt/TamoTaskai/Profilis
+12:32:42;145.56.74.42;www.tamo.lt
+13:42:59;145.56.74.42;www.tamo.lt/Prisijungimas/Messages/Received
+16:02:12;145.56.74.42;www.youtu.be/hKpa9j-rVCo
+17:22:11;145.56.74.42;www.youtu.be/3o2r_0JP1pk
+19:11:11;145.56.74.42;www.youtu.be/suESuhpJguo
+22:30:12;145.56.74.42;www.youtu.be/MyXM-BNp9Hw
+23:40:12;145.56.74.42;www.youtu.be/edBLgA0dNOo
+23:44:56;145.56.74.42;www.youtu.be/Sq91-BFl8hQ

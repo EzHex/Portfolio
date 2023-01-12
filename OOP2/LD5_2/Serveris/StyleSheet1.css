@@ -1,0 +1,32 @@
+﻿body {
+    
+}
+.styled-table {
+    border-collapse: collapse;
+    margin-left: 0;
+    margin-right: auto;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.label1 {
+    font-size: x-large;
+    font: bold;
+}
+.labelForTable {
+    font-family: sans-serif;
+}
+.errorColor {
+    color: red;
+}
+.firstrow {
+    background-color: #496580;
+    color: #ffffff;
+    text-align: center;
+    border-top: solid 1px #000000;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}

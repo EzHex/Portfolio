@@ -1,0 +1,5 @@
+﻿Kaunas 10
+Vilnius 20
+Panevėžys 15
+Šiauliai 8
+Klaipėda 25

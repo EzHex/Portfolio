@@ -1,0 +1,9 @@
+﻿Vilnius
+Lietaus g. 5
+pastas3@pastas.lt
+a;ASR516;Audi;A87;2005-06;2020-06-15;Dujos;15.68;121510
+m;ASC502;Scania;T17;2004-10;2020-01-05;Dyzelinas;50.15;50
+m;YTC106;Iveco;M7;2003-02;2019-08-08;Dyzelinas;25.18;120
+m;UWU727;Subaru;A1;2002-06;2020-06-15;Benzinas;16.85;382
+k;VDB650;Scania;T6;2009-10;2020-01-05;Dyzelinas;52.65;200
+m;OUB265;Iveco;M7;2001-02;2019-08-08;Dyzelinas;26.85;350

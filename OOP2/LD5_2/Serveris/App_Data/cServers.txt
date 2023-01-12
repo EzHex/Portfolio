@@ -1,0 +1,4 @@
+﻿156.152.12.1;www.tamo.lt
+58.123.169.255;www.youtu.be
+156.1.2.6;www.aliexpress.com
+145.17.68.91;www.reddit.com

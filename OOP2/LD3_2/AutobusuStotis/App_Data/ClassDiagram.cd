@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="AutobusuStotis.Bus">
+    <Position X="10.5" Y="4.75" Width="6.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAYAgACAEgAAAAAAAAAQAAAAAAAABQA=</HashCode>
+      <FileName>App_Code1\Bus.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AutobusuStotis.LinkedList&lt;type&gt;">
+    <Position X="4.25" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAgIAAABBAAAAQAAAAAAAAEAAEAAAAAAEIAgA=</HashCode>
+      <FileName>App_Code1\LinkedList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AutobusuStotis.Node&lt;type&gt;">
+    <Position X="7.5" Y="4.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAQAAAAAA=</HashCode>
+      <FileName>App_Code1\Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutobusuStotis.Price">
+    <Position X="4.25" Y="5.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAgACAggAAAAAAAAAQAAAAAAAABQA=</HashCode>
+      <FileName>App_Code1\Price.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AutobusuStotis.Tasks">
+    <Position X="7.5" Y="0.5" Width="8.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACBAAAIAAAAAAAAAAAQAACFAAgCAAAAAAABBAA=</HashCode>
+      <FileName>App_Code1\Tasks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutobusuStotis.Forma1">
+    <Position X="0.5" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAACACAgEAAoAEAAAEAAQDgAIADwcAAAAAAAAAYAAgA=</HashCode>
+      <FileName>Forma1.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

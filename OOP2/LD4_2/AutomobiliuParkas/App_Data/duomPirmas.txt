@@ -1,0 +1,9 @@
+﻿Kaunas
+Studentu g. 60
+pastas1@pastas.lt
+a;AAA005;Subaru;A1;2005-06;2020-06-15;Dujos;15.68;121510
+k;ASC518;Scania;T523;2010-10;2020-01-05;Dyzelinas;50.15;200
+m;BBY893;Iveco;M721;2015-02;2019-08-08;Dyzelinas;25.18;32
+a;AAB005;Subaru;A51;2009-06;2019-05-15;Benzinas;16.85;90256
+k;ASK518;Scania;T54;2009-10;2020-01-05;Dyzelinas;52.65;200
+m;GBY893;Iveco;M721;2015-02;2019-08-08;Dyzelinas;26.85;32
